@@ -69,8 +69,8 @@ input[type="submit"]:hover{
 }
 
 .loader_container{
-  width: 100%;
-  height: 100%;
+  min-width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,4 +78,42 @@ input[type="submit"]:hover{
 
 .loader{
   width: 50px;
+}
+
+.list-tarefa{
+  padding: 0 1em 2em;
+  margin: 1em 2em;
+}
+
+.list-tarefa h2{
+  margin-bottom: 0;
+}
+.list-tarefa p{
+  text-align: center;
+}
+.tarefa{
+  border-bottom: 1px solid #444;
+  padding: 1em 0;
+}
+.tarefa h3{
+  margin-bottom: .5em;
+}
+.tarefa-done{
+  text-decoration: line-through;
+  color: rgb(240, 193, 98);
+}
+.tarefa p{
+  text-align: left;
+  font-style: italic;
+  font-size: .7em;
+  margin-bottom: 1.5em;
+}
+.tarefa svg{
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-right: 1em;
+  transition: .5s;
+}
+.tarefa svg:hover{
+  color: rgb(240, 193, 98)
 }
