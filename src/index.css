@@ -1,11 +1,17 @@
-html{
-  height: 100%;
+html, body {
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+}
+
+body {
   background: linear-gradient(
-    195deg ,
-  rgb(240, 193, 98) 0%,
-  rgb(221, 164, 89) 98%
+    195deg,
+    rgb(240, 193, 98) 0%,
+    rgb(221, 164, 89) 98%
   );
-  
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
 }
 
 body{
