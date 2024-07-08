@@ -50,12 +50,12 @@ function App() {
     setTime('');
 
   };
-  const handleDelete = async(id) => {
+  const handleDelete = async (id) => {
     await fetch(API + "/tarefa/" + id, {
       method: "DELETE",
     });
-    setTarefas((prevState) => prevState.filter((tarefas) => tarefas.id !== id))
-};
+    setTarefas((prevState) => prevState.filter((tarefa) => tarefa.id !== id));
+  };
 
 const handleEdit = async (tarefa) => {
 
